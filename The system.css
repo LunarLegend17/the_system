@@ -1,0 +1,162 @@
+* {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(43, 54, 79);
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    overflow:hidden;
+    width:100%;
+    height:100vh;
+    position:relative;
+}
+
+.bubbles{
+    position:relative;
+    display:flex;
+}
+
+.bubbles span{
+    position:relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc4dc44,
+    0 0 0 50px #4fc3dc
+    0 0 0 100px #4fc3dc
+
+}
+.navbar {
+    padding: 15px;
+    position: sticky;
+    background-color: rgba(0, 0, 0, 0.3); /* More transparency for system-like UI */
+    backdrop-filter: blur(10px); /* Adds a subtle glass effect */
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+li a {
+    color: white;
+    font-size: 14px;
+    padding: 8px 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+li a:hover {
+    color: #00a2ff;
+    text-shadow: 0 0 10px #00a2ff;
+}
+
+button {
+    background: none;
+    border: 2px solid white;
+    padding: 10px;
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+button a {
+    font-size: 14px;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Soft white glow */
+}
+
+
+img {
+    padding-left: 15px;
+}
+
+.hero {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    background: linear-gradient(to bottom, rgba(10, 15, 29, 0.8), rgba(43, 54, 79, 0.9));
+}
+
+.hero-content {
+    max-width: fit-content;
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 10px;
+    border: 3px solid #00a2ff;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(0, 162, 255, 0.4); /* Subtle blue neon effect */
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: 2px solid #00a2ff;
+    background: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 162, 255, 0.6);
+    width: fit-content;
+}
+
+.hero button:hover {
+    background-color: #00a2ff;
+    color: black;
+    box-shadow: 0 0 10px #00a2ff, 0 0 20px #00a2ff;
+}
+
+.blue-text {
+    color: #00a2ff; /* Bright green */
+    text-shadow: 0 0 10px #00a2ff; /* Neon glow effect */
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
