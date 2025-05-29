@@ -555,6 +555,8 @@ body {
     display: block;
 }
 
+/* ... (existing CSS) ... */
+
 /* ========== Footer ========== */
 footer {
     background-color: rgba(0, 0, 0, 0.5);
@@ -621,6 +623,12 @@ footer p {
         height: auto;
         aspect-ratio: 16 / 9;
     }
+
+    /* Social icons responsiveness for tablets */
+    .social-icon {
+        width: 45px; /* Slightly smaller */
+        height: 45px;
+    }
 }
 
 /* Mobile devices */
@@ -655,6 +663,17 @@ footer p {
     .download-card {
         width: 100%;
         max-width: 300px;
+    }
+
+    /* Social icons responsiveness for mobile */
+    .social-icon {
+        width: 40px; /* Further smaller */
+        height: 40px;
+        margin: 0 8px; /* Adjust margin */
+    }
+
+    .footer-social {
+        gap: 15px; /* Reduce gap between icons */
     }
 }
 
@@ -732,6 +751,18 @@ footer p {
     .trailer-section {
         padding: 30px 15px;
     }
+
+    /* Social icons responsiveness for small mobile */
+    .social-icon {
+        width: 35px; /* Even smaller */
+        height: 35px;
+        margin: 0 5px; /* Further adjust margin */
+    }
+
+    .social-icon svg {
+        width: 20px; /* Adjust SVG size */
+        height: 20px;
+    }
 }
 
 /* Extra small devices */
@@ -756,6 +787,17 @@ footer p {
     .section-header p {
         font-size: 14px;
     }
+
+    /* Social icons responsiveness for extra small mobile */
+    .social-icon {
+        width: 30px; /* Smallest size */
+        height: 30px;
+        margin: 0 3px; /* Minimal margin */
+    }
+    .social-icon svg {
+        width: 18px; /* Adjust SVG size */
+        height: 18px;
+    }
 }
 
 .footer-container {
@@ -770,18 +812,19 @@ footer p {
 .footer-social {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 20px; /* Keep a base gap */
+    flex-wrap: wrap; /* Allow icons to wrap to the next line */
 }
 
 .social-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Base size for larger screens */
+    height: 50px; /* Base size for larger screens */
     border-radius: 50%;
     background-color: #00a2ff;
-    margin: 0 10px;
+    margin: 0 10px; /* Base margin for larger screens */
     transition: all 0.3s ease;
 }
 
@@ -790,9 +833,11 @@ footer p {
 }
 
 .social-icon svg {
-    width: 24px;
-    height: 24px;
+    width: 24px; /* Base SVG size */
+    height: 24px; /* Base SVG size */
+    fill: white; /* Ensure SVG color is white as per current design */
 }
+
 
 .view-team{
     border: 2px solid #00a2ff;
