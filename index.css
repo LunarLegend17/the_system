@@ -1286,3 +1286,252 @@ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
         height: 40px;
     }
 }
+
+/* ========== Changelog Section Styles ========== */
+.changelog-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.changelog-container {
+    max-width: 900px; /* Adjust as needed */
+    margin: 30px auto;
+    background-color: rgba(10, 20, 40, 0.8);
+    border: 2px solid #00a2ff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 162, 255, 0.2);
+    padding: 30px;
+}
+
+.changelog-post {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed rgba(0, 162, 255, 0.3);
+}
+
+.changelog-post:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.changelog-post h3 {
+    color: #00a2ff;
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.changelog-post .post-date {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family: 'Cinzel', sans-serif;
+}
+
+.changelog-post .post-images {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 15px; /* Space between images */
+    padding-bottom: 15px; /* Space for scrollbar */
+    margin-bottom: 20px;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: thin;
+    scrollbar-color: #00a2ff #15161d;
+}
+
+.changelog-post .post-images img {
+    max-width: 100%; /* Ensures images are responsive within the scrollable area */
+    height: 200px; /* Fixed height for consistency, adjust as needed */
+    object-fit: cover; /* Crop images to fit the fixed height */
+    border-radius: 8px;
+    border: 1px solid rgba(0, 162, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 162, 255, 0.1);
+    /* Make images not shrink, so they maintain their size for scrolling */
+    flex-shrink: 0; 
+}
+
+.changelog-post .post-changes {
+    list-style: disc;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 25px; /* Indent bullet points */
+    text-align: left; /* Align text to the left for readability */
+}
+
+.changelog-post .post-changes li {
+    margin-bottom: 8px;
+}
+
+/* Admin Post Form Styles */
+.admin-post-form-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(10, 20, 40, 0.8);
+    border: 2px solid #5865F2; /* Discord blue for admin section */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(88, 101, 242, 0.3);
+    text-align: left;
+}
+
+.admin-post-form-container h3 {
+    color: #5865F2;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.admin-post-form-container .user-id-display {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+    word-break: break-all; /* Ensures long IDs don't overflow */
+}
+
+.admin-post-form input[type="text"],
+.admin-post-form input[type="date"],
+.admin-post-form textarea {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(88, 101, 242, 0.5);
+    border-radius: 5px;
+    background-color: rgba(20, 30, 50, 0.7);
+    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.admin-post-form input:focus,
+.admin-post-form textarea:focus {
+    border-color: #5865F2;
+    outline: none;
+    box-shadow: 0 0 8px rgba(88, 101, 242, 0.5);
+}
+
+/* Style for date input's calendar icon */
+.admin-post-form input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Makes the calendar icon white */
+}
+
+
+.admin-post-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.admin-post-form .post-btn {
+    background: rgba(88, 101, 242, 0.2); 
+    border: 2px solid #5865F2;
+    color: white;
+    padding: 12px 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.admin-post-form .post-btn:hover {
+    background: rgba(88, 101, 242, 0.4);
+    box-shadow: 0 0 15px rgba(88, 101, 242, 0.5);
+}
+
+.form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.form-message.success {
+    background-color: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.form-message.error {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.form-message.info {
+    background-color: rgba(23, 162, 184, 0.2);
+    color: #17a2b8;
+    border: 1px solid #17a2b8;
+}
+
+.no-posts-message {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+/* Responsive adjustments for Changelog and Admin Form */
+@media (max-width: 768px) {
+    .changelog-container,
+    .admin-post-form-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+    .changelog-post h3,
+    .admin-post-form-container h3 {
+        font-size: 24px;
+    }
+    .changelog-post .post-images img {
+        height: 150px; /* Smaller images on tablets */
+    }
+    .changelog-post .post-changes,
+    .admin-post-form input,
+    .admin-post-form textarea {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .changelog-section {
+        padding: 30px 15px;
+    }
+    .changelog-container,
+    .admin-post-form-container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+    .changelog-post h3,
+    .admin-post-form-container h3 {
+        font-size: 20px;
+    }
+    .changelog-post .post-date {
+        font-size: 12px;
+    }
+    .changelog-post .post-images {
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+    .changelog-post .post-images img {
+        height: 120px; /* Even smaller images on mobile */
+    }
+    .changelog-post .post-changes {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .admin-post-form input,
+    .admin-post-form textarea,
+    .admin-post-form .post-btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Ensure the main-wrapper doesn't interfere with fixed bubbles */
+.main-wrapper {
+    position: relative;
+    z-index: 1; /* Puts content above background bubbles */
+}
+
